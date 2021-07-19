@@ -15,6 +15,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.apache.commons.lang3.StringUtils;
 import org.openmrs.Location;
@@ -57,7 +58,7 @@ public class UserContext implements Serializable {
 	/**
 	 * User's permission proxies
 	 */
-	private List<String> proxies = new ArrayList<>();
+	private CopyOnWriteArrayList<String> proxies = new CopyOnWriteArrayList<>();
 	
 	/**
 	 * User's locale
